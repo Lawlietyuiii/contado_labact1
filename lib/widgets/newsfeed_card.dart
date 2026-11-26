@@ -46,8 +46,10 @@ class NewsFeedCard extends StatelessWidget {
                 CircleAvatar(
                   radius: 20.r,
                   backgroundColor: AppColors.lightGrey,
-                  child: const Icon(Icons.person, color: AppColors.grey),
-                ),
+                  backgroundImage: AssetImage(
+                    'assets/images/${authorName.split(' ').first.toLowerCase()}.jpg',
+                     ),
+                  ),
                 SizedBox(width: 10.w),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
